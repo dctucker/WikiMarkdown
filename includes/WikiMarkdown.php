@@ -324,7 +324,7 @@ class WikiMarkdown {
 
 		if (!$parsedown) {
 			$parsedown = $wgAllowMarkdownExtended
-				? new \ParsedownExtended($wgParsedownExtendedParameters)
+				? new BenjaminHoegh\ParsedownExtended\ParsedownExtended($wgParsedownExtendedParameters)
 				: ($wgAllowMarkdownExtra
 					? new \ParsedownExtra()
 					: new \Parsedown());
